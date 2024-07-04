@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .myContainer {
+      @apply text-white container w-[90%] max-w-[1200px] mx-auto rounded-lg my-4 px-6 py-5 ;
+    }
+  }

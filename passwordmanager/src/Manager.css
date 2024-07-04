@@ -1,0 +1,54 @@
+.table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-wrapper th, .table-wrapper td {
+    padding: 8px 12px;
+    text-align: center;
+  }
+  
+  .table-wrapper th {
+    background-color: #ff8800;
+    color: #fff;
+  }
+  
+  .table-wrapper tbody tr:nth-child(odd) {
+    background-color: #006400;
+  }
+  
+  .table-wrapper tbody tr:nth-child(even) {
+    background-color: #228B22;
+  }
+  
+  .table-wrapper td {
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 600px) {
+    .table-wrapper table, .table-wrapper thead, .table-wrapper tbody, .table-wrapper th, .table-wrapper td, .table-wrapper tr {
+      display: block;
+
+    }
+  
+    .table-wrapper tr {
+      margin-bottom: 15px;
+    }
+  
+    .table-wrapper td {
+      text-align: center;
+      position: relative;
+    }
+  
+    .table-wrapper td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
